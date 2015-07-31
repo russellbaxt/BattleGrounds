@@ -20,13 +20,20 @@ public class Main
 	protected void start()
 	{
 		
+		System.out.println("he");
+		
 		keyBindings = new KeyBindings();
 		
-		frame = new JFrame(Tools.TITLE);
+
+		frame = new JFrame();
+		frame.setTitle(Tools.TITLE);
+		frame.add(keyBindings);
 		frame.setSize(Tools.WIDTH, Tools.HEIGHT);
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		frame.setVisible(true);
+		
+		System.out.println("Ha");
 	}
 }
